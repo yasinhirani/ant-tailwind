@@ -1,5 +1,6 @@
 import { Button, Collapse, Divider, Image } from "antd";
 import React from "react";
+import ArticlesCard from "./ArticlesCard";
 
 const HomePage = () => {
   const {Panel} = Collapse;
@@ -21,7 +22,7 @@ const HomePage = () => {
             </p>
             <Button
               type="primary"
-              className="bg-[#F77C0C] text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52"
+              className="bg-[#F77C0C] text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52 text-base"
             >
               Check Your Eligibility
             </Button>
@@ -98,7 +99,7 @@ const HomePage = () => {
               </div>
               <Button
                 type="primary"
-                className="bg-[#F77C0C] text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52"
+                className="bg-[#F77C0C] text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52 text-base"
               >
                 Create An Account
               </Button>
@@ -107,7 +108,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* End section 2 */}
-      {/* Start section 3 */}
+      {/* Start section 3 (How it works) */}
       <div className="bg-background-gray">
         <div className="w-full max-w-[88rem] mx-auto px-6 md:px-12 py-10">
           <h2 className="font-bold text-3xl text-center text-gray-700 mb-10">
@@ -136,7 +137,7 @@ const HomePage = () => {
                   <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Conveniently find out if you may qualify</p>
                 </div>
                 <div className="pleading-form flex flex-col items-center">
-                  <figure className="w-9 mb-2">
+                  <figure className="w-8 mb-2">
                     <Image src="/images/pleading-form.svg" preview={false}/>
                   </figure>
                   <h4 className="font-bold text-lg text-gray-700">Pleading Form</h4>
@@ -166,7 +167,7 @@ const HomePage = () => {
                   <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Conveniently find out if you may qualify</p>
                 </div>
                 <div className="pleading-form-mobile flex flex-col items-center">
-                  <figure className="w-9 mb-2">
+                  <figure className="w-8 mb-2">
                     <Image src="/images/pleading-form.svg" preview={false}/>
                   </figure>
                   <h4 className="font-bold text-lg text-gray-700">Pleading Form</h4>
@@ -177,7 +178,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      {/* End section 3 */}
+      {/* End section 3 (How it works) */}
       {/* Start section 4 */}
       <div className="bg-white">
         <div className="flex flex-col-reverse md:flex-row justify-between items-center md:space-x-10 w-full max-w-[88rem] mx-auto px-6 md:px-12 py-10">
@@ -186,7 +187,7 @@ const HomePage = () => {
               Check Eligibility for Only{" "}
               <span className="text-theme-orange">$24.99</span>
             </h2>
-            <ul className="list-disc space-y-5 font-semibold">
+            <ul className="list-disc space-y-5 font-semibold ml-5">
               <li>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis modi vitae consequuntur ullam sit a dolorum,
@@ -205,7 +206,7 @@ const HomePage = () => {
             </ul>
             <Button
               type="primary"
-              className="bg-theme-orange text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52"
+              className="bg-theme-orange text-white px-4 py-2.5 h-auto rounded-md border-0 font-semibold w-full sm:w-52 text-base"
             >
               Start Screening Now
             </Button>
@@ -253,34 +254,28 @@ const HomePage = () => {
       <div className="bg-background-gray">
         <div className="w-full max-w-[88rem] mx-auto px-6 md:px-12 py-10">
           <div className="flex justify-between items-center mb-5">
-            <h2 className="font-bold text-gray-700 text-3xl">FAQs</h2>
+            <h2 className="font-bold text-gray-700 text-2xl">FAQs</h2>
             <p className="text-theme-orange font-semibold text-lg cursor-pointer">See All</p>
           </div>
           <Collapse
-            className="flex flex-col space-y-6"
+            className="flex flex-col space-y-8 text-base"
             accordion
             bordered={false}
             expandIconPosition="right"
           >
-            <Panel className="panel" header="Section 1" key={1}>
+            <Panel className="panel" header="01. Who is Eligible to Get a DUI or DWI Offense Expunged?" key={1}>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum, suscipit?
               </p>
             </Panel>
-            <Panel className="panel" header="Section 2" key={2}>
+            <Panel className="panel" header="02. How Does a DUI or DWI Expungement Work?" key={2}>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum, suscipit?
               </p>
             </Panel>
-            <Panel className="panel" header="Section 3" key={3}>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laborum, suscipit?
-              </p>
-            </Panel>
-            <Panel className="panel" header="Section 4" key={4}>
+            <Panel className="panel" header="03. Will It Be Easier for Me to Find a Job? or Get a Promotion?" key={3}>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Laborum, suscipit?
@@ -290,6 +285,26 @@ const HomePage = () => {
         </div>
       </div>
       {/* End section 6 (FAQs) */}
+      {/* Start section 6 (Articles) */}
+      <div className="bg-white">
+        <div className="w-full max-w-[88rem] mx-auto px-6 md:px-12 py-10">
+            <h2 className="font-bold text-gray-700 text-2xl mb-5">Popular Articles</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-12">
+                <ArticlesCard />
+                <ArticlesCard />
+                <ArticlesCard />
+            </div>
+            <div className="flex justify-center mt-10">
+              <Button
+              type="primary"
+              className="bg-[#F77C0C] text-white px-4 py-2.5 h-auto rounded-md border-0 font-medium w-52 text-base"
+            >
+              Get Expunged
+            </Button>
+            </div>
+        </div>
+      </div>
+      {/* End section 6 (Articles) */}
     </div>
   );
 };
