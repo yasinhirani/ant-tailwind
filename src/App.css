@@ -139,15 +139,31 @@
 .how-it-works .create-account{
   position: absolute;
   left: 5%;
-  top: 44%;
+  top: 25%;
 }
 .how-it-works .screening{
   position: absolute;
   left: 39%;
-  top: 44%;
+  top: 25%;
 }
 .how-it-works .pleading-form{
   position: absolute;
   left: 74%;
-  top: 44%;
+  top: 25%;
+}
+/* For vertical */
+.how-it-works .create-account-mobile{
+  position: absolute;
+  left: 15%;
+  top: 6%;
+}
+.how-it-works .screening-mobile{
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+.how-it-works .pleading-form-mobile{
+  position: absolute;
+  left: 15%;
+  top: 73%;
 }

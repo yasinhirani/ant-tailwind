@@ -122,25 +122,57 @@ const HomePage = () => {
               />
               <figcaption>
                 <div className="create-account flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/create-account.svg" preview={false}/>
+                  </figure>
                   <h4 className="font-bold text-lg text-gray-700">Create Account</h4>
                   <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Get started in minutes with no obligation</p>
                 </div>
                 <div className="screening flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/screening.svg" preview={false}/>
+                  </figure>
                   <h4 className="font-bold text-lg text-gray-700">Screening</h4>
                   <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Conveniently find out if you may qualify</p>
                 </div>
                 <div className="pleading-form flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/pleading-form.svg" preview={false}/>
+                  </figure>
                   <h4 className="font-bold text-lg text-gray-700">Pleading Form</h4>
                   <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Let our step-by-step wizard guide you</p>
                 </div>
               </figcaption>
             </figure>
-            <figure className="w-[15rem] mb-10 md:mb-0 block md:hidden">
+            <figure className="w-[15rem] max-w-[15rem] mb-10 md:mb-0 block md:hidden relative">
               <Image
                 className="w-full h-full"
                 preview={false}
                 src="/images/05.svg"
               />
+              <figcaption>
+                <div className="create-account-mobile flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/create-account.svg" preview={false}/>
+                  </figure>
+                  <h4 className="font-bold text-lg text-gray-700">Create Account</h4>
+                  <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Get started in minutes with no obligation</p>
+                </div>
+                <div className="screening-mobile flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/screening.svg" preview={false}/>
+                  </figure>
+                  <h4 className="font-bold text-lg text-gray-700">Screening</h4>
+                  <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Conveniently find out if you may qualify</p>
+                </div>
+                <div className="pleading-form-mobile flex flex-col items-center">
+                  <figure className="w-9 mb-2">
+                    <Image src="/images/pleading-form.svg" preview={false}/>
+                  </figure>
+                  <h4 className="font-bold text-lg text-gray-700">Pleading Form</h4>
+                  <p className="font-semibold text-gray-500 mt-3 w-[20ch] text-center">Let our step-by-step wizard guide you</p>
+                </div>
+              </figcaption>
             </figure>
           </div>
         </div>

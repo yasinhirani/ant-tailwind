@@ -3,7 +3,7 @@ import {
   CloseCircleFilled,
   HomeOutlined,
 } from "@ant-design/icons";
-import { Button, Col, Drawer, Menu, MenuProps, Row } from "antd";
+import { Button, Col, Drawer, Image, Menu, MenuProps, Row } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -119,14 +119,58 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Drawer placement="right" onClose={onClose} visible={visible}>
-        <div className="flex flex-col items-center justify-between h-full">
-          <figure>
-            <img src="/intoxa-logo.png" alt="" />
-          </figure>
-          <Button type="text" onClick={onClose} className="text-white">
-            <CloseCircleFilled />
-          </Button>
+      <Drawer placement="right" onClose={onClose} visible={visible} width={320}>
+        <div className="flex flex-col justify-between h-full py-5">
+          <div>
+            <figure className="mb-10 flex justify-center">
+              <img className="w-40" src="/intoxa-logo.png" alt="" />
+            </figure>
+            <div className="flex flex-col space-y-8">
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/home.svg" preview={false} />
+                </figure>
+                <span>Home</span>
+              </Link>
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/group.svg" preview={false} />
+                </figure>
+                <span>What you need</span>
+              </Link>
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/faq.svg" preview={false} />
+                </figure>
+                <span>FAQs</span>
+              </Link>
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/articles.svg" preview={false} />
+                </figure>
+                <span>Articles</span>
+              </Link>
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/edit.svg" preview={false} />
+                </figure>
+                <span>Sign Up</span>
+              </Link>
+              <Link to={"/"} className="flex space-x-3 items-center font-medium text-base tracking-wide">
+                <figure className="w-5">
+                  <Image src="/images/login.svg" preview={false} />
+                </figure>
+                <span>Login</span>
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <Button type="text" onClick={onClose} className="text-white">
+              <figure className="w-10">
+                <Image src="/images/close.svg" preview={false} />
+              </figure>
+            </Button>
+          </div>
         </div>
       </Drawer>
     </>
